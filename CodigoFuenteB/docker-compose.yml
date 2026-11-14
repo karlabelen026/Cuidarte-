@@ -32,7 +32,8 @@ services:
       - PORT=4000
       - DATABASE_URL=postgres://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@cuidarteplus-postgres-ev:5432/${POSTGRES_DB:-cuidarteplus}
       - NODE_ENV=${NODE_ENV:-production}
-      - JWT_SECRET=${JWT_SECRET:-your-secret-key-change-in-production}
+      # Sin valor por defecto: docker compose se niega a arrancar si no está definido en .env
+      - JWT_SECRET=${JWT_SECRET:?Defina JWT_SECRET en el archivo .env (ver .env.example)}
       - FRONTEND_URL=http://localhost:${PORT_FRONTEND:-3333}
     ports:
       - "${PORT_BACKEND:-4444}:4000"

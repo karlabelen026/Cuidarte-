@@ -16,9 +16,11 @@ const validate = (schema, source = "body") => {
           detalles: errors,
         });
       }
+      // El detalle solo se registra en el servidor, nunca se envía al cliente
+      console.error("[validate] Error inesperado:", error);
       return res.status(500).json({
         error: "Error en la validación",
-        glosa: error.message || error.toString(),
+        glosa: "Error interno",
       });
     }
   };

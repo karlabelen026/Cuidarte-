@@ -3,9 +3,11 @@ const { pool } = require("../db");
 const jwt = require("jsonwebtoken");
 const validate = require("../middleware/validate");
 const { createUserSchema, updateUserSchema } = require("../validations/users");
+const { requireRole } = require("../middleware/auth");
+const { hashPassword } = require("../utils/passwords");
 
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || "inseguro";
+const { JWT_SECRET } = require("../config");
 
 function getUserFromAuthHeader(req) {
   const auth = req.headers.authorization || "";
@@ -20,21 +22,17 @@ function getUserFromAuthHeader(req) {
   }
 }
 
-router.post("/", validate(createUserSchema), async (req, res) => {
+// Crear usuario (solo admin: evita que cualquier usuario autenticado cree cuentas con rol admin)
+router.post("/", requireRole(["admin"]), validate(createUserSchema), async (req, res) => {
   const { nombre_usuario, contrasena_hash, correo, rol_id } = req.body;
   try {
-    const authUser = getUserFromAuthHeader(req);
-    if (!authUser) {
-      return res.status(401).json({
-        error: "No autorizado",
-        glosa: "Token inválido",
-      });
-    }
+    const authUser = req.authUser;
 
-    // Crear usuario
+    // Crear usuario (la contraseña recibida se guarda como hash bcrypt)
+    const passwordHash = await hashPassword(contrasena_hash);
     const result = await pool.query(
       "INSERT INTO usuarios (nombre_usuario, contrasena, correo) VALUES ($1, $2, $3) RETURNING id, nombre_usuario, correo, created_at",
-      [nombre_usuario, contrasena_hash, correo]
+      [nombre_usuario, passwordHash, correo]
     );
     const newUser = result.rows[0];
 
@@ -66,7 +64,7 @@ router.post("/", validate(createUserSchema), async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al crear usuario",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -132,7 +130,7 @@ router.get("/", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al listar usuarios",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -238,7 +236,7 @@ router.get("/:id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al obtener usuario",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -275,7 +273,7 @@ router.put("/:id", validate(updateUserSchema), async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al actualizar usuario",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -364,7 +362,7 @@ async function updateUsuarioEmpresa(
     }
     if (contrasena_hash !== undefined) {
       updateFields.push(`contrasena=$${paramIndex++}`);
-      updateValues.push(contrasena_hash);
+      updateValues.push(await hashPassword(contrasena_hash));
     }
     if (correo !== undefined) {
       updateFields.push(`correo=$${paramIndex++}`);
@@ -429,7 +427,7 @@ async function updateUsuarioEmpresa(
     console.error(err);
     res.status(500).json({
       error: "Error al actualizar usuario",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 }
@@ -499,7 +497,7 @@ async function updateUsuarioSistemaMedico(
     }
     if (contrasena_hash !== undefined) {
       updateFields.push(`contrasena=$${paramIndex++}`);
-      updateValues.push(contrasena_hash);
+      updateValues.push(await hashPassword(contrasena_hash));
     }
     if (correo !== undefined) {
       updateFields.push(`correo=$${paramIndex++}`);
@@ -563,25 +561,25 @@ async function updateUsuarioSistemaMedico(
     console.error(err);
     res.status(500).json({
       error: "Error al actualizar usuario",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 }
 
-router.delete("/:id", async (req, res) => {
+// Eliminar usuario (solo admin)
+router.delete("/:id", requireRole(["admin"]), async (req, res) => {
   try {
     const result = await pool.query(
-      "DELETE FROM usuarios WHERE id=$1 RETURNING *",
+      "DELETE FROM usuarios WHERE id=$1 RETURNING id",
       [req.params.id]
     );
     if (result.rows.length === 0)
       return res.status(404).json({ error: "No encontrado" });
 
-    const authUser = getUserFromAuthHeader(req);
     await pool.query(
       "INSERT INTO auditoria (usuario_id, accion) VALUES ($1, $2)",
       [
-        authUser?.nombreUsuario || null,
+        req.authUser.usuarioId,
         `USUARIOS_ELIMINAR: eliminó usuario ID ${req.params.id}`,
       ]
     );
@@ -591,7 +589,7 @@ router.delete("/:id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al eliminar usuario",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });

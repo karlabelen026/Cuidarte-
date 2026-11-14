@@ -5,8 +5,9 @@ const validate = require("../middleware/validate");
 const delayMiddleware = require("../middleware/delay");
 const { pacienteSchema, updatePacienteSchema } = require("../validations/pacientes");
 const { normalizeRut } = require("../utils/rut");
+const { requireRole: requireRoleMw } = require("../middleware/auth");
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || "inseguro";
+const { JWT_SECRET } = require("../config");
 
 function getUserFromAuthHeader(req) {
   const auth = req.headers.authorization || "";
@@ -136,7 +137,7 @@ router.post("/", validate(pacienteSchema), async (req, res) => {
     }
     res.status(500).json({
       error: "Error al crear paciente",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -164,7 +165,7 @@ router.get("/", delayMiddleware(5000), async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al listar pacientes",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -240,13 +241,13 @@ router.get("/:id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al obtener paciente",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
 
-// Buscar paciente por RUT (público para pacientes)
-router.get("/buscar/rut/:rut", async (req, res) => {
+// Buscar paciente por RUT (solo médico y admin: expone la ficha completa)
+router.get("/buscar/rut/:rut", requireRoleMw(["medico", "admin"]), async (req, res) => {
   try {
     const { rut } = req.params;
     const normalizedRut = normalizeRut(rut);
@@ -267,7 +268,7 @@ router.get("/buscar/rut/:rut", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al buscar paciente",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -378,7 +379,7 @@ router.put("/:id", validate(updatePacienteSchema), async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al actualizar paciente",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -416,7 +417,7 @@ router.delete("/:id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al eliminar paciente",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
