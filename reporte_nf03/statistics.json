@@ -1,0 +1,50 @@
+{
+  "POST /autenticacion/login" : {
+    "transaction" : "POST /autenticacion/login",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 50.0,
+    "medianResTime" : 50.0,
+    "minResTime" : 50.0,
+    "maxResTime" : 50.0,
+    "pct1ResTime" : 50.0,
+    "pct2ResTime" : 50.0,
+    "pct3ResTime" : 50.0,
+    "throughput" : 20.0,
+    "receivedKBytesPerSec" : 11.328125,
+    "sentKBytesPerSec" : 4.5703125
+  },
+  "GET /tipo-examen" : {
+    "transaction" : "GET /tipo-examen",
+    "sampleCount" : 22613,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 3.6913722195197534,
+    "medianResTime" : 3.0,
+    "minResTime" : 1.0,
+    "maxResTime" : 33.0,
+    "pct1ResTime" : 6.0,
+    "pct2ResTime" : 8.0,
+    "pct3ResTime" : 12.0,
+    "throughput" : 189.97093267469796,
+    "receivedKBytesPerSec" : 714.8027378863392,
+    "sentKBytesPerSec" : 83.66883851200078
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 22614,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 3.693420005306438,
+    "medianResTime" : 3.0,
+    "minResTime" : 1.0,
+    "maxResTime" : 50.0,
+    "pct1ResTime" : 6.0,
+    "pct2ResTime" : 8.0,
+    "pct3ResTime" : 12.0,
+    "throughput" : 187.4424965808778,
+    "receivedKBytesPerSec" : 705.2625099076837,
+    "sentKBytesPerSec" : 82.55348368405238
+  }
+}

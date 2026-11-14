@@ -1,0 +1,546 @@
+2026-11-14 14:02:36,167 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-14 14:02:36,199 INFO o.a.j.JMeter: Loading user properties from: C:\Users\karla\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-11-14 14:02:36,200 INFO o.a.j.JMeter: Loading system properties from: C:\Users\karla\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: java.version=17.0.17
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: os.name=Windows 11
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-14 14:02:36,208 INFO o.a.j.JMeter: os.version=10.0
+2026-11-14 14:02:36,209 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-11-14 14:02:36,209 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-14 14:02:36,209 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-14 14:02:36,209 INFO o.a.j.JMeter: Available Processors =16
+2026-11-14 14:02:36,223 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-14 14:02:36,223 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-14 14:02:36,224 INFO o.a.j.JMeter: JMeterHome=C:\Users\karla\tools\apache-jmeter-5.6.3
+2026-11-14 14:02:36,224 INFO o.a.j.JMeter: user.dir  =c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-
+2026-11-14 14:02:36,224 INFO o.a.j.JMeter: PWD       =C:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-
+2026-11-14 14:02:36,229 INFO o.a.j.JMeter: IP: 192.168.68.1 Name: karla FullName: 192.168.68.1
+2026-11-14 14:02:36,249 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03'
+2026-11-14 14:02:36,252 INFO o.a.j.s.FileServer: Default base='c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-'
+2026-11-14 14:02:36,255 INFO o.a.j.s.FileServer: Set new base='c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-'
+2026-11-14 14:02:36,532 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-14 14:02:36,567 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-14 14:02:36,571 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-14 14:02:36,575 INFO o.a.j.s.SaveService: Loading file: plan_NF03.jmx
+2026-11-14 14:02:36,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-14 14:02:36,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-14 14:02:36,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-14 14:02:36,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-14 14:02:36,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-14 14:02:36,638 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-14 14:02:36,694 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-14 14:02:36,706 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-11-14 14:02:36,706 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: nf03.jtl
+2026-11-14 14:02:36,706 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\karla\tools\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-11-14 14:02:36,708 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-11-14 14:02:36,711 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-11-14 14:02:36,713 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-11-14 14:02:36,714 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-11-14 14:02:36,714 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-11-14 14:02:36,715 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-11-14 14:02:36,715 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-11-14 14:02:36,715 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-11-14 14:02:36,715 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-11-14 14:02:36,715 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-11-14 14:02:36,719 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,719 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,719 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,720 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-11-14 14:02:36,721 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-14 14:02:36,721 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-11-14 14:02:36,721 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-11-14 14:02:36,722 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-11-14 14:02:36,722 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-11-14 14:02:36,722 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-11-14 14:02:36,737 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-14 14:02:36,737 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-14 14:02:36,737 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-14 14:02:36,743 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-14 14:02:36,743 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-14 14:02:37,054 INFO o.a.j.JMeter: Running test (1794675757054)
+2026-11-14 14:02:37,056 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2026-11-14 14:02:37,056 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : setUp - Login 
+2026-11-14 14:02:37,056 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group setUp - Login.
+2026-11-14 14:02:37,056 INFO o.a.j.e.StandardJMeterEngine: Test will stop on error
+2026-11-14 14:02:37,057 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-11-14 14:02:37,061 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-11-14 14:02:37,061 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2026-11-14 14:02:37,063 INFO o.a.j.t.JMeterThread: Thread started: setUp - Login 1-1
+2026-11-14 14:02:37,076 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = karla
+2026-11-14 14:02:37,084 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-14 14:02:37,085 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-14 14:02:37,085 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-14 14:02:37,085 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-14 14:02:37,085 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-14 14:02:37,720 INFO o.a.j.t.JMeterThread: Thread is done: setUp - Login 1-1
+2026-11-14 14:02:37,721 INFO o.a.j.t.JMeterThread: Thread finished: setUp - Login 1-1
+2026-11-14 14:02:37,721 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2026-11-14 14:02:37,736 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : NF-03 Pico (200 hilos, rampa 10 s)
+2026-11-14 14:02:37,736 INFO o.a.j.e.StandardJMeterEngine: Starting 200 threads for group NF-03 Pico (200 hilos, rampa 10 s).
+2026-11-14 14:02:37,736 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-11-14 14:02:37,736 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=200 ramp-up=10 delayedStart=false
+2026-11-14 14:02:37,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-1
+2026-11-14 14:02:37,779 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-11-14 14:02:37,779 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-14 14:02:37,788 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-2
+2026-11-14 14:02:37,840 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-3
+2026-11-14 14:02:37,889 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-4
+2026-11-14 14:02:37,938 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-5
+2026-11-14 14:02:37,988 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-6
+2026-11-14 14:02:38,038 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-7
+2026-11-14 14:02:38,089 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-8
+2026-11-14 14:02:38,139 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-9
+2026-11-14 14:02:38,188 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-10
+2026-11-14 14:02:38,238 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-11
+2026-11-14 14:02:38,287 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-12
+2026-11-14 14:02:38,340 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-13
+2026-11-14 14:02:38,388 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-14
+2026-11-14 14:02:38,440 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-15
+2026-11-14 14:02:38,488 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-16
+2026-11-14 14:02:38,539 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-17
+2026-11-14 14:02:38,588 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-18
+2026-11-14 14:02:38,639 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-19
+2026-11-14 14:02:38,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-20
+2026-11-14 14:02:38,738 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-21
+2026-11-14 14:02:38,787 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-22
+2026-11-14 14:02:38,837 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-23
+2026-11-14 14:02:38,886 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-24
+2026-11-14 14:02:38,937 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-25
+2026-11-14 14:02:38,986 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-26
+2026-11-14 14:02:39,037 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-27
+2026-11-14 14:02:39,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-28
+2026-11-14 14:02:39,136 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-29
+2026-11-14 14:02:39,186 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-30
+2026-11-14 14:02:39,236 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-31
+2026-11-14 14:02:39,288 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-32
+2026-11-14 14:02:39,337 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-33
+2026-11-14 14:02:39,386 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-34
+2026-11-14 14:02:39,436 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-35
+2026-11-14 14:02:39,486 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-36
+2026-11-14 14:02:39,537 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-37
+2026-11-14 14:02:39,587 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-38
+2026-11-14 14:02:39,637 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-39
+2026-11-14 14:02:39,688 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-40
+2026-11-14 14:02:39,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-41
+2026-11-14 14:02:39,787 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-42
+2026-11-14 14:02:39,836 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-43
+2026-11-14 14:02:39,888 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-44
+2026-11-14 14:02:39,936 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-45
+2026-11-14 14:02:39,987 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-46
+2026-11-14 14:02:40,037 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-47
+2026-11-14 14:02:40,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-48
+2026-11-14 14:02:40,137 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-49
+2026-11-14 14:02:40,187 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-50
+2026-11-14 14:02:40,236 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-51
+2026-11-14 14:02:40,286 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-52
+2026-11-14 14:02:40,336 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-53
+2026-11-14 14:02:40,386 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-54
+2026-11-14 14:02:40,436 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-55
+2026-11-14 14:02:40,488 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-56
+2026-11-14 14:02:40,537 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-57
+2026-11-14 14:02:40,587 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-58
+2026-11-14 14:02:40,637 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-59
+2026-11-14 14:02:40,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-60
+2026-11-14 14:02:40,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-61
+2026-11-14 14:02:40,787 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-62
+2026-11-14 14:02:40,836 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-63
+2026-11-14 14:02:40,887 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-64
+2026-11-14 14:02:40,938 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-65
+2026-11-14 14:02:40,987 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-66
+2026-11-14 14:02:41,036 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-67
+2026-11-14 14:02:41,086 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-68
+2026-11-14 14:02:41,136 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-69
+2026-11-14 14:02:41,186 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-70
+2026-11-14 14:02:41,237 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-71
+2026-11-14 14:02:41,288 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-72
+2026-11-14 14:02:41,336 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-73
+2026-11-14 14:02:41,387 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-74
+2026-11-14 14:02:41,437 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-75
+2026-11-14 14:02:41,487 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-76
+2026-11-14 14:02:41,538 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-77
+2026-11-14 14:02:41,588 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-78
+2026-11-14 14:02:41,638 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-79
+2026-11-14 14:02:41,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-80
+2026-11-14 14:02:41,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-81
+2026-11-14 14:02:41,788 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-82
+2026-11-14 14:02:41,838 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-83
+2026-11-14 14:02:41,887 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-84
+2026-11-14 14:02:41,936 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-85
+2026-11-14 14:02:41,987 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-86
+2026-11-14 14:02:42,037 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-87
+2026-11-14 14:02:42,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-88
+2026-11-14 14:02:42,136 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-89
+2026-11-14 14:02:42,186 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-90
+2026-11-14 14:02:42,236 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-91
+2026-11-14 14:02:42,286 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-92
+2026-11-14 14:02:42,338 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-93
+2026-11-14 14:02:42,386 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-94
+2026-11-14 14:02:42,436 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-95
+2026-11-14 14:02:42,486 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-96
+2026-11-14 14:02:42,537 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-97
+2026-11-14 14:02:42,586 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-98
+2026-11-14 14:02:42,636 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-99
+2026-11-14 14:02:42,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-100
+2026-11-14 14:02:42,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-101
+2026-11-14 14:02:42,786 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-102
+2026-11-14 14:02:42,837 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-103
+2026-11-14 14:02:42,887 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-104
+2026-11-14 14:02:42,938 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-105
+2026-11-14 14:02:42,987 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-106
+2026-11-14 14:02:43,037 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-107
+2026-11-14 14:02:43,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-108
+2026-11-14 14:02:43,137 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-109
+2026-11-14 14:02:43,186 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-110
+2026-11-14 14:02:43,237 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-111
+2026-11-14 14:02:43,288 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-112
+2026-11-14 14:02:43,338 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-113
+2026-11-14 14:02:43,386 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-114
+2026-11-14 14:02:43,436 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-115
+2026-11-14 14:02:43,487 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-116
+2026-11-14 14:02:43,536 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-117
+2026-11-14 14:02:43,588 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-118
+2026-11-14 14:02:43,638 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-119
+2026-11-14 14:02:43,686 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-120
+2026-11-14 14:02:43,736 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-121
+2026-11-14 14:02:43,786 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-122
+2026-11-14 14:02:43,838 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-123
+2026-11-14 14:02:43,886 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-124
+2026-11-14 14:02:43,936 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-125
+2026-11-14 14:02:43,986 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-126
+2026-11-14 14:02:44,041 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-127
+2026-11-14 14:02:44,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-128
+2026-11-14 14:02:44,136 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-129
+2026-11-14 14:02:44,186 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-130
+2026-11-14 14:02:44,238 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-131
+2026-11-14 14:02:44,288 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-132
+2026-11-14 14:02:44,337 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-133
+2026-11-14 14:02:44,386 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-134
+2026-11-14 14:02:44,436 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-135
+2026-11-14 14:02:44,487 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-136
+2026-11-14 14:02:44,538 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-137
+2026-11-14 14:02:44,587 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-138
+2026-11-14 14:02:44,637 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-139
+2026-11-14 14:02:44,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-140
+2026-11-14 14:02:44,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-141
+2026-11-14 14:02:44,788 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-142
+2026-11-14 14:02:44,837 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-143
+2026-11-14 14:02:44,886 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-144
+2026-11-14 14:02:44,936 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-145
+2026-11-14 14:02:44,987 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-146
+2026-11-14 14:02:45,037 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-147
+2026-11-14 14:02:45,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-148
+2026-11-14 14:02:45,136 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-149
+2026-11-14 14:02:45,187 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-150
+2026-11-14 14:02:45,237 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-151
+2026-11-14 14:02:45,287 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-152
+2026-11-14 14:02:45,338 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-153
+2026-11-14 14:02:45,387 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-154
+2026-11-14 14:02:45,437 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-155
+2026-11-14 14:02:45,486 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-156
+2026-11-14 14:02:45,537 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-157
+2026-11-14 14:02:45,587 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-158
+2026-11-14 14:02:45,636 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-159
+2026-11-14 14:02:45,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-160
+2026-11-14 14:02:45,736 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-161
+2026-11-14 14:02:45,787 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-162
+2026-11-14 14:02:45,838 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-163
+2026-11-14 14:02:45,886 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-164
+2026-11-14 14:02:45,937 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-165
+2026-11-14 14:02:45,986 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-166
+2026-11-14 14:02:46,036 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-167
+2026-11-14 14:02:46,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-168
+2026-11-14 14:02:46,137 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-169
+2026-11-14 14:02:46,187 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-170
+2026-11-14 14:02:46,238 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-171
+2026-11-14 14:02:46,286 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-172
+2026-11-14 14:02:46,337 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-173
+2026-11-14 14:02:46,387 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-174
+2026-11-14 14:02:46,437 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-175
+2026-11-14 14:02:46,487 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-176
+2026-11-14 14:02:46,538 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-177
+2026-11-14 14:02:46,587 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-178
+2026-11-14 14:02:46,637 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-179
+2026-11-14 14:02:46,686 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-180
+2026-11-14 14:02:46,737 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-181
+2026-11-14 14:02:46,786 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-182
+2026-11-14 14:02:46,836 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-183
+2026-11-14 14:02:46,887 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-184
+2026-11-14 14:02:46,937 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-185
+2026-11-14 14:02:46,986 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-186
+2026-11-14 14:02:47,036 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-187
+2026-11-14 14:02:47,087 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-188
+2026-11-14 14:02:47,137 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-189
+2026-11-14 14:02:47,186 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-190
+2026-11-14 14:02:47,238 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-191
+2026-11-14 14:02:47,287 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-192
+2026-11-14 14:02:47,337 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-193
+2026-11-14 14:02:47,388 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-194
+2026-11-14 14:02:47,438 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-195
+2026-11-14 14:02:47,487 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-196
+2026-11-14 14:02:47,537 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-197
+2026-11-14 14:02:47,588 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-198
+2026-11-14 14:02:47,637 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-199
+2026-11-14 14:02:47,687 INFO o.a.j.t.JMeterThread: Thread started: NF-03 Pico (200 hilos, rampa 10 s) 1-200
+2026-11-14 14:03:00,006 INFO o.a.j.r.Summariser: summary +   3323 in 00:00:23 =  144.8/s Avg:     3 Min:     1 Max:    50 Err:     0 (0.00%) Active: 200 Started: 200 Finished: 0
+2026-11-14 14:03:30,007 INFO o.a.j.r.Summariser: summary +   5928 in 00:00:30 =  197.6/s Avg:     3 Min:     1 Max:    11 Err:     0 (0.00%) Active: 200 Started: 200 Finished: 0
+2026-11-14 14:03:30,008 INFO o.a.j.r.Summariser: summary =   9251 in 00:00:53 =  174.7/s Avg:     3 Min:     1 Max:    50 Err:     0 (0.00%)
+2026-11-14 14:04:00,052 INFO o.a.j.r.Summariser: summary +   5935 in 00:00:30 =  197.5/s Avg:     3 Min:     1 Max:    25 Err:     0 (0.00%) Active: 200 Started: 200 Finished: 0
+2026-11-14 14:04:00,053 INFO o.a.j.r.Summariser: summary =  15186 in 00:01:23 =  183.0/s Avg:     3 Min:     1 Max:    50 Err:     0 (0.00%)
+2026-11-14 14:04:30,008 INFO o.a.j.r.Summariser: summary +   5928 in 00:00:30 =  197.9/s Avg:     3 Min:     1 Max:    20 Err:     0 (0.00%) Active: 200 Started: 200 Finished: 0
+2026-11-14 14:04:30,008 INFO o.a.j.r.Summariser: summary =  21114 in 00:01:53 =  186.9/s Avg:     3 Min:     1 Max:    50 Err:     0 (0.00%)
+2026-11-14 14:04:36,753 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-13
+2026-11-14 14:04:36,769 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-93
+2026-11-14 14:04:36,769 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-34
+2026-11-14 14:04:36,799 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-35
+2026-11-14 14:04:36,831 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-91
+2026-11-14 14:04:36,832 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-114
+2026-11-14 14:04:36,832 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-75
+2026-11-14 14:04:36,832 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-74
+2026-11-14 14:04:36,833 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-33
+2026-11-14 14:04:36,833 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-72
+2026-11-14 14:04:36,833 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-137
+2026-11-14 14:04:36,834 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-176
+2026-11-14 14:04:36,844 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-73
+2026-11-14 14:04:36,845 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-194
+2026-11-14 14:04:36,845 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-115
+2026-11-14 14:04:36,860 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-151
+2026-11-14 14:04:36,860 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-32
+2026-11-14 14:04:36,861 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-12
+2026-11-14 14:04:36,861 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-174
+2026-11-14 14:04:36,862 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-11
+2026-11-14 14:04:36,876 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-95
+2026-11-14 14:04:36,876 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-110
+2026-11-14 14:04:36,877 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-173
+2026-11-14 14:04:36,877 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-152
+2026-11-14 14:04:36,877 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-155
+2026-11-14 14:04:36,878 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-111
+2026-11-14 14:04:36,878 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-197
+2026-11-14 14:04:36,879 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-92
+2026-11-14 14:04:36,879 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-192
+2026-11-14 14:04:36,879 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-16
+2026-11-14 14:04:36,892 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-198
+2026-11-14 14:04:36,892 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-70
+2026-11-14 14:04:36,893 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-131
+2026-11-14 14:04:36,893 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-51
+2026-11-14 14:04:36,893 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-154
+2026-11-14 14:04:36,894 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-56
+2026-11-14 14:04:36,894 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-53
+2026-11-14 14:04:36,894 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-135
+2026-11-14 14:04:36,906 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-37
+2026-11-14 14:04:36,906 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-79
+2026-11-14 14:04:36,922 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-138
+2026-11-14 14:04:36,923 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-179
+2026-11-14 14:04:36,923 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-158
+2026-11-14 14:04:36,923 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-19
+2026-11-14 14:04:36,923 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-196
+2026-11-14 14:04:36,939 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-180
+2026-11-14 14:04:36,943 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-36
+2026-11-14 14:04:36,943 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-78
+2026-11-14 14:04:36,943 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-15
+2026-11-14 14:04:36,943 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-17
+2026-11-14 14:04:36,942 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-178
+2026-11-14 14:04:36,942 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-156
+2026-11-14 14:04:36,942 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-77
+2026-11-14 14:04:36,941 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-98
+2026-11-14 14:04:36,941 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-97
+2026-11-14 14:04:36,940 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-14
+2026-11-14 14:04:36,940 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-172
+2026-11-14 14:04:36,940 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-57
+2026-11-14 14:04:36,944 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-134
+2026-11-14 14:04:36,944 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-94
+2026-11-14 14:04:36,944 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-136
+2026-11-14 14:04:36,945 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-76
+2026-11-14 14:04:36,953 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-99
+2026-11-14 14:04:36,969 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-96
+2026-11-14 14:04:36,969 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-59
+2026-11-14 14:04:36,970 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-199
+2026-11-14 14:04:36,971 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-177
+2026-11-14 14:04:36,971 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-159
+2026-11-14 14:04:36,971 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-116
+2026-11-14 14:04:36,971 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-18
+2026-11-14 14:04:36,984 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-157
+2026-11-14 14:04:36,984 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-200
+2026-11-14 14:04:36,985 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-80
+2026-11-14 14:04:36,985 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-100
+2026-11-14 14:04:36,985 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-39
+2026-11-14 14:04:36,986 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-119
+2026-11-14 14:04:36,986 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-161
+2026-11-14 14:04:36,986 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-162
+2026-11-14 14:04:36,986 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-103
+2026-11-14 14:04:36,999 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-141
+2026-11-14 14:04:37,000 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-118
+2026-11-14 14:04:37,000 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-58
+2026-11-14 14:04:37,000 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-139
+2026-11-14 14:04:37,001 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-3
+2026-11-14 14:04:37,001 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-20
+2026-11-14 14:04:37,001 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-160
+2026-11-14 14:04:37,002 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-38
+2026-11-14 14:04:37,014 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-102
+2026-11-14 14:04:37,014 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-60
+2026-11-14 14:04:37,015 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-117
+2026-11-14 14:04:37,015 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-101
+2026-11-14 14:04:37,015 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-61
+2026-11-14 14:04:37,016 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-40
+2026-11-14 14:04:37,029 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-140
+2026-11-14 14:04:37,029 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-121
+2026-11-14 14:04:37,046 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-120
+2026-11-14 14:04:37,047 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-181
+2026-11-14 14:04:37,047 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-142
+2026-11-14 14:04:37,047 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-81
+2026-11-14 14:04:37,092 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-42
+2026-11-14 14:04:37,092 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-21
+2026-11-14 14:04:37,092 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-43
+2026-11-14 14:04:37,093 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-41
+2026-11-14 14:04:37,093 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-62
+2026-11-14 14:04:37,094 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-1
+2026-11-14 14:04:37,094 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-184
+2026-11-14 14:04:37,106 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-183
+2026-11-14 14:04:37,106 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-122
+2026-11-14 14:04:37,106 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-2
+2026-11-14 14:04:37,120 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-123
+2026-11-14 14:04:37,120 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-23
+2026-11-14 14:04:37,121 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-22
+2026-11-14 14:04:37,136 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-24
+2026-11-14 14:04:37,136 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-144
+2026-11-14 14:04:37,137 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-182
+2026-11-14 14:04:37,137 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-84
+2026-11-14 14:04:37,151 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-82
+2026-11-14 14:04:37,170 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-124
+2026-11-14 14:04:37,182 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-185
+2026-11-14 14:04:37,199 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-25
+2026-11-14 14:04:37,215 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-83
+2026-11-14 14:04:37,215 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-166
+2026-11-14 14:04:37,215 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-63
+2026-11-14 14:04:37,216 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-143
+2026-11-14 14:04:37,216 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-164
+2026-11-14 14:04:37,245 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-186
+2026-11-14 14:04:37,245 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-163
+2026-11-14 14:04:37,260 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-26
+2026-11-14 14:04:37,261 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-4
+2026-11-14 14:04:37,276 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-66
+2026-11-14 14:04:37,292 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-46
+2026-11-14 14:04:37,293 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-107
+2026-11-14 14:04:37,293 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-85
+2026-11-14 14:04:37,293 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-147
+2026-11-14 14:04:37,294 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-64
+2026-11-14 14:04:37,294 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-65
+2026-11-14 14:04:37,307 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-125
+2026-11-14 14:04:37,308 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-86
+2026-11-14 14:04:37,308 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-27
+2026-11-14 14:04:37,309 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-145
+2026-11-14 14:04:37,309 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-105
+2026-11-14 14:04:37,309 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-167
+2026-11-14 14:04:37,309 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-45
+2026-11-14 14:04:37,310 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-165
+2026-11-14 14:04:37,310 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-104
+2026-11-14 14:04:37,322 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-146
+2026-11-14 14:04:37,322 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-126
+2026-11-14 14:04:37,338 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-6
+2026-11-14 14:04:37,338 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-168
+2026-11-14 14:04:37,369 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-187
+2026-11-14 14:04:37,417 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-188
+2026-11-14 14:04:37,418 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-106
+2026-11-14 14:04:37,432 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-127
+2026-11-14 14:04:37,432 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-47
+2026-11-14 14:04:37,433 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-87
+2026-11-14 14:04:37,433 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-28
+2026-11-14 14:04:37,434 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-149
+2026-11-14 14:04:37,448 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-88
+2026-11-14 14:04:37,449 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-128
+2026-11-14 14:04:37,449 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-69
+2026-11-14 14:04:37,449 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-148
+2026-11-14 14:04:37,450 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-89
+2026-11-14 14:04:37,450 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-129
+2026-11-14 14:04:37,450 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-108
+2026-11-14 14:04:37,450 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-44
+2026-11-14 14:04:37,463 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-169
+2026-11-14 14:04:37,463 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-189
+2026-11-14 14:04:37,463 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-5
+2026-11-14 14:04:37,464 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-67
+2026-11-14 14:04:37,464 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-7
+2026-11-14 14:04:37,464 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-8
+2026-11-14 14:04:37,477 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-150
+2026-11-14 14:04:37,477 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-109
+2026-11-14 14:04:37,478 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-190
+2026-11-14 14:04:37,478 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-29
+2026-11-14 14:04:37,478 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-170
+2026-11-14 14:04:37,493 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-130
+2026-11-14 14:04:37,508 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-50
+2026-11-14 14:04:37,508 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-90
+2026-11-14 14:04:37,540 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-9
+2026-11-14 14:04:37,554 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-48
+2026-11-14 14:04:37,555 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-10
+2026-11-14 14:04:37,555 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-68
+2026-11-14 14:04:37,555 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-49
+2026-11-14 14:04:37,646 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-191
+2026-11-14 14:04:37,647 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-71
+2026-11-14 14:04:37,647 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-112
+2026-11-14 14:04:37,661 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-52
+2026-11-14 14:04:37,661 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-171
+2026-11-14 14:04:37,677 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-193
+2026-11-14 14:04:37,678 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-153
+2026-11-14 14:04:37,678 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-30
+2026-11-14 14:04:37,678 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-133
+2026-11-14 14:04:37,693 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-132
+2026-11-14 14:04:37,707 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-54
+2026-11-14 14:04:37,723 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-31
+2026-11-14 14:04:37,724 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-55
+2026-11-14 14:04:37,739 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-113
+2026-11-14 14:04:37,786 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NF-03 Pico (200 hilos, rampa 10 s) 1-195
+2026-11-14 14:04:37,787 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-195
+2026-11-14 14:04:37,787 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: NF-03 Pico (200 hilos, rampa 10 s) 1-175
+2026-11-14 14:04:37,787 INFO o.a.j.t.JMeterThread: Thread finished: NF-03 Pico (200 hilos, rampa 10 s) 1-175
+2026-11-14 14:04:37,788 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-14 14:04:37,790 INFO o.a.j.r.Summariser: summary +   1500 in 00:00:08 =  192.7/s Avg:     3 Min:     1 Max:    14 Err:     0 (0.00%) Active: 0 Started: 200 Finished: 200
+2026-11-14 14:04:37,791 INFO o.a.j.r.Summariser: summary =  22614 in 00:02:01 =  187.3/s Avg:     3 Min:     1 Max:    50 Err:     0 (0.00%)
+2026-11-14 14:04:37,791 INFO o.a.j.JMeter: Generating Dashboard
+2026-11-14 14:04:37,791 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-11-14 14:04:37,801 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-11-14 14:04:38,239 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-11-14 14:04:38,239 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-11-14 14:04:38,240 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-11-14 14:04:38,240 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-11-14 14:04:38,248 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-11-14 14:04:38,251 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-11-14 14:04:38,251 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-11-14 14:04:38,251 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-11-14 14:04:38,411 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-11-14 14:04:38,412 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-11-14 14:04:38,412 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-11-14 14:04:38,412 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-11-14 14:04:38,527 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-11-14 14:04:38,527 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 158298 samples
+2026-11-14 14:04:38,527 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-11-14 14:04:38,527 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-11-14 14:04:38,527 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-11-14 14:04:38,528 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-11-14 14:04:38,528 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-11-14 14:04:38,528 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-11-14 14:04:38,529 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 339210 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 67842 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 22614 samples
+2026-11-14 14:04:38,530 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 22614 samples produced in 715ms on channel 0
+2026-11-14 14:04:38,530 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-11-14 14:04:38,583 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-11-14 14:04:38,583 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-11-14 14:04:38,584 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-11-14 14:04:38,584 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-11-14 14:04:38,585 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03\statistics.json
+2026-11-14 14:04:38,613 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-11-14 14:04:38,615 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03
+2026-11-14 14:04:38,696 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03, creating folder structure
+2026-11-14 14:04:38,698 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\Users\karla\tools\apache-jmeter-5.6.3\bin\report-template' to 'c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03', got message: c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03, found non empty folder with following content [c:\Users\karla\OneDrive\Documentos\GitHub\Cuidarte-\reporte_nf03\statistics.json], will be ignored
+2026-11-14 14:04:39,032 INFO o.a.j.JMeter: Dashboard generated
