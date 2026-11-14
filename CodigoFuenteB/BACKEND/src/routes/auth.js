@@ -4,10 +4,25 @@ const { pool } = require("../db");
 const validate = require("../middleware/validate");
 const { loginSchema, registerSchema } = require("../validations/auth");
 const { normalizeRut } = require("../utils/rut");
+const { hashPassword, verifyPassword, DUMMY_HASH } = require("../utils/passwords");
+const rateLimit = require("express-rate-limit");
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || "inseguro";
+const { JWT_SECRET } = require("../config");
 
-router.post("/login", validate(loginSchema), async (req, res) => {
+// Límite de intentos de login por IP (OWASP A07 / ASVS 2.2.1)
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // ventana de 15 minutos
+  limit: 5, // máximo 5 intentos fallidos por IP en la ventana
+  skipSuccessfulRequests: true, // los logins exitosos no consumen intentos
+  standardHeaders: "draft-7",
+  legacyHeaders: false,
+  message: {
+    error: "Demasiados intentos",
+    glosa: "Ha superado el número de intentos de inicio de sesión. Intente nuevamente en 15 minutos.",
+  },
+});
+
+router.post("/login", loginLimiter, validate(loginSchema), async (req, res) => {
   const { nombre_usuario, password } = req.body;
   try {
     const result = await pool.query(
@@ -15,10 +30,11 @@ router.post("/login", validate(loginSchema), async (req, res) => {
       [nombre_usuario]
     );
     if (result.rows.length === 0) {
+      await verifyPassword(password, DUMMY_HASH); // tiempo similar al de un usuario existente
       return res.status(401).json({ error: "Credenciales inválidas" });
     }
     const user = result.rows[0];
-    if (user.contrasena !== password) {
+    if (!(await verifyPassword(password, user.contrasena))) {
       return res.status(401).json({ error: "Credenciales inválidas" });
     }
 
@@ -64,7 +80,7 @@ router.post("/login", validate(loginSchema), async (req, res) => {
     console.error(err);
     res
       .status(500)
-      .json({ error: "Error en login", glosa: err.message || err.toString() });
+      .json({ error: "Error en login", glosa: "Error interno" });
   }
 });
 
@@ -105,10 +121,11 @@ router.post("/registro", validate(registerSchema), async (req, res) => {
       });
     }
 
-    // Crear usuario
+    // Crear usuario (contraseña almacenada como hash bcrypt)
+    const passwordHash = await hashPassword(password);
     const userResult = await pool.query(
       "INSERT INTO usuarios (nombre_usuario, contrasena, correo) VALUES ($1, $2, $3) RETURNING id, nombre_usuario, correo, created_at",
-      [nombre_usuario, password, correo]
+      [nombre_usuario, passwordHash, correo]
     );
     const user = userResult.rows[0];
 
@@ -160,7 +177,7 @@ router.post("/registro", validate(registerSchema), async (req, res) => {
     }
     res.status(500).json({
       error: "Error al registrar",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });

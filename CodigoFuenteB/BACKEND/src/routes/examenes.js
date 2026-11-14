@@ -5,7 +5,7 @@ const validate = require("../middleware/validate");
 const delayMiddleware = require("../middleware/delay");
 const { examenMedicoSchema, updateExamenMedicoSchema } = require("../validations/examenes");
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || "inseguro";
+const { JWT_SECRET } = require("../config");
 
 function getUserFromAuthHeader(req) {
   const auth = req.headers.authorization || "";
@@ -90,7 +90,7 @@ router.post("/", delayMiddleware(5000), validate(examenMedicoSchema), async (req
     console.error(err);
     res.status(500).json({
       error: "Error al crear examen médico",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -170,7 +170,7 @@ router.get("/", delayMiddleware(5000), async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al listar exámenes médicos",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -253,7 +253,7 @@ router.get("/:id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al obtener examen médico",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -321,7 +321,7 @@ router.get("/paciente/:paciente_id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al obtener exámenes médicos",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -387,7 +387,7 @@ router.put("/:id", delayMiddleware(5000), validate(updateExamenMedicoSchema), as
     console.error(err);
     res.status(500).json({
       error: "Error al actualizar examen médico",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });
@@ -425,7 +425,7 @@ router.delete("/:id", async (req, res) => {
     console.error(err);
     res.status(500).json({
       error: "Error al eliminar examen médico",
-      glosa: err.message || err.toString(),
+      glosa: "Error interno",
     });
   }
 });

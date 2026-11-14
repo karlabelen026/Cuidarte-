@@ -2,10 +2,13 @@ const path = require("path");
 const fs = require("fs");
 const express = require("express");
 const cors = require("cors");
+const helmet = require("helmet");
 const morgan = require("morgan");
 const swaggerUi = require("swagger-ui-express");
 
+const config = require("./config"); // falla al arrancar si faltan variables obligatorias
 const { pool } = require("./db");
+const { migratePlaintextPasswords } = require("./utils/passwords");
 
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/users");
@@ -18,7 +21,22 @@ const rolesRoutes = require("./routes/roles");
 
 const app = express();
 
-app.use(cors());
+// Cabeceras de seguridad HTTP (CSP, X-Content-Type-Options, X-Frame-Options, etc.)
+// upgrade-insecure-requests se desactiva porque el entorno local no usa TLS
+// (si no, Swagger UI en /docs intentaría cargar sus recursos por https).
+app.use(
+  helmet({
+    contentSecurityPolicy: { directives: { upgradeInsecureRequests: null } },
+  })
+);
+// CORS restringido al origen del frontend
+app.use(
+  cors({
+    origin: config.FRONTEND_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
 app.use(morgan("dev"));
 
@@ -46,7 +64,11 @@ app.get("/", (req, res) => {
   res.json({ name: "cuidarteplus", status: "ok" });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`cuidarteplus API escuchando en puerto ${PORT}`);
-});
+const PORT = config.PORT;
+migratePlaintextPasswords(pool)
+  .catch((err) => console.error("[seguridad] No se pudo migrar contraseñas:", err))
+  .finally(() => {
+    app.listen(PORT, () => {
+      console.log(`cuidarteplus API escuchando en puerto ${PORT}`);
+    });
+  });

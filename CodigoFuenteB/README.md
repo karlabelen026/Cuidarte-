@@ -27,7 +27,9 @@ root
 ```
 En el archivo `.env` se definen las variables de entorno que utilizará docker al momento de crear las imágenes, por lo que puedes modificarlas en el caso de tener otros servicios corriendo en tu equipo que utilicen los mismos puertos.
 
-1. JWT_SECRET: `0d1d8132f0fde5beabb417b434ff10f1cae8635a461686b0f46ac9c2bbfbd0e8` Llave utilizada para cifrar y generar los tokens de sesión
+Copia `.env.example` como `.env` y completa los valores (el archivo `.env` nunca se sube al repositorio).
+
+1. JWT_SECRET: **obligatorio**, mínimo 32 caracteres. Genéralo con `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`. Si falta, ni docker compose ni el backend arrancan.
 2. PORT_POSTGRES: `15442` Puerto expuesto que utilizará tu equipo para permitir acceder a la conexión a la base de datos
 3. PORT_BACKEND: `4444` Puerto expuesto que utilizará tu equipo para acceder a la API
 4. PORT_FRONTEND: `3333` Puerto expuesto que utilizará tu equipo para acceder al cliente - frontend

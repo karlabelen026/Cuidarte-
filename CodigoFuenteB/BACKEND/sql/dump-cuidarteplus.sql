@@ -285,9 +285,10 @@ ALTER TABLE public.auditoria ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
     CACHE 1
 );
 
-INSERT INTO public.usuarios OVERRIDING SYSTEM VALUE VALUES (1, 'admin', 'admin', 'admin@cuidarteplus.com');
-INSERT INTO public.usuarios OVERRIDING SYSTEM VALUE VALUES (2, 'medico', 'medico', 'medico@cuidarteplus.com');
-INSERT INTO public.usuarios OVERRIDING SYSTEM VALUE VALUES (3, 'paciente', 'paciente', 'paciente@cuidarteplus.com');
+-- Contraseñas semilla almacenadas como hash bcrypt (cost 12). Valores en claro: admin/admin, medico/medico, paciente/paciente
+INSERT INTO public.usuarios OVERRIDING SYSTEM VALUE VALUES (1, 'admin', '$2b$12$Dg6xkYeXIp7DQdJ6fXHbye7sq8YbMjd9hiMY8bt3wDqlXIAn3QJUS', 'admin@cuidarteplus.com');
+INSERT INTO public.usuarios OVERRIDING SYSTEM VALUE VALUES (2, 'medico', '$2b$12$RfczwD5nnnBceKPAOaq16.qJoTYZGnAssWuGoCLGqQnEjsCb1CJAG', 'medico@cuidarteplus.com');
+INSERT INTO public.usuarios OVERRIDING SYSTEM VALUE VALUES (3, 'paciente', '$2b$12$0EovxFz2ycaHwirR8gDUc.UTGWxRK.pm3yZspgmyN/N3lgkZ7j6g.', 'paciente@cuidarteplus.com');
 
 --
 -- Data for Name: roles; Type: TABLE DATA; Schema: public; Owner: postgres

@@ -106,8 +106,9 @@ npm run start
 
 ## Notas
 - Los documentos de contratos se almacenan en DB (`documentos_contrato.document`) y se sirven desde `GET /contratos/:id/file`.
-- Contraseñas en texto plano a propósito (campo `contrasena_hash` no usa hash real).
-- Sin mitigaciones de seguridad (XSS/SQLi, etc.).
+- Las contraseñas se almacenan con bcrypt (el campo `contrasena_hash` recibe la contraseña en claro y el backend la hashea). Al arrancar, el backend migra a bcrypt cualquier contraseña que siga en texto plano.
+- Mitigaciones aplicadas en la rama `mejoras-seguridad`: ver `CORRECCIONES.md` en la raíz del repositorio.
+- Variables obligatorias: `JWT_SECRET` y `DATABASE_URL` (ver `.env.example`); sin ellas el servidor no arranca.
 - La mayoría de los endpoints requieren autenticación mediante token Bearer en el header `Authorization`.
 - Los endpoints filtran datos por empresa según el `empresaId` contenido en el token JWT.
 - Todos los errores retornan formato: `{ error: "mensaje", glosa: "detalle del error" }`.

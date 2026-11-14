@@ -1,10 +1,6 @@
 const { Pool } = require("pg");
-require("dotenv").config();
+const { DATABASE_URL } = require("./config");
 
-const connectionString =
-  process.env.DATABASE_URL ||
-  "postgres://postgres:alone15@localhost:5432/cuidarteplus";
-
-const pool = new Pool({ connectionString });
+const pool = new Pool({ connectionString: DATABASE_URL });
 
 module.exports = { pool };

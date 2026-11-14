@@ -1,0 +1,12 @@
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Dependencias y builds
+node_modules/
+dist/
+
+# Archivos subidos en tiempo de ejecución
+CodigoFuenteB/BACKEND/uploads/*
+!CodigoFuenteB/BACKEND/uploads/.gitkeep
